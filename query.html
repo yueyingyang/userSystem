@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="jquery-3.3.1.min.js"></script>
+	
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#diySearch" data-whatever="@mdo">自定义查询</button>
+
+	<div class="modal fade" id="diySearch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  	<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">DIY查询</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+        	<div class="row">
+      		<div class="col-md-6">
+      			<div class="form-group">
+            		<label for="userName" class="form-control-label">用户名：</label>
+            		<input type="text" class="form-control" id="userName">
+          		</div>
+          	</div>
+          	<div class="col-md-6">
+          		 <div class="form-group">
+         			<label for="sex" class="form-control-label">性别：</label>
+    				<select class="form-control" id="sex"> 
+		      			<option>男</option> 
+		      			<option>女</option> 
+		    		</select>
+				</div>
+      		</div>
+    		</div>         
+	        <div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+			            <label for="userGrade" class="form-control-label">年级：</label>
+			            <input type="text" class="form-control" id="userGrade">
+			        </div>
+				</div>
+				<div class="col-md-6">
+			        <div class="form-group">
+			            <label for="userXuebu" class="form-control-label">学部：</label>
+			            <input type="text" class="form-control" id="userXuebu">
+			        </div>
+		    	</div>
+	        </div>
+
+	        <div class="row">
+	        	<div class="col-md-6">
+			        <div class="form-group">
+			            <label for="userXuanyuan" class="form-control-label">学院：</label>
+			            <input type="text" class="form-control" id="userXueyuan">
+			        </div>
+		        </div>
+		        <div class="col-md-6">
+			        <div class="form-group">
+			            <label for="userProfession" class="form-control-label">专业：</label>
+			            <input type="text" class="form-control" id="userProfession">
+			        </div>  
+		        </div>
+	        </div>     
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">查询</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
